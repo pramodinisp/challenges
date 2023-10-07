@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function basicOp(operation, value1, value2) {
+
+            let result;
+
+            switch (operation) {
+
+                case '+':
+			result = valuel + value2;
+			break;
+                
+		case '-':
+			 result = value1 - value2;
+			 break;
+                case '*':
+
+                    result = value1 * value2;
+
+                    break;
+                case '/':
+
+                    result = value1 / value2;
+
+                    break;
+
+            }
+            return result;
+        }
+        let ans = basicOp(+, 10, 20);
+        document.write(ans);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

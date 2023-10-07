@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function points(gamesArray) {
+            let totalPoints = 0;
+
+            for (let i = 0; i < gamesArray.length; i++) {
+
+                // Sample value 3:1"
+
+                const value = gamesArray[i];
+
+                const parts = value.split(":");
+
+                const x = parts[0];
+                const y = parts[1];
+
+                if (x > y) {
+
+                    totalPoints = totalPoints + 3;
+
+                } else if (x === y) {
+                    totalPoints += 1;
+		}
+                }
+                return totalPoints;
+            }
+let res = points(10,20,30,40);
+document.write(res);
+        
+        
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

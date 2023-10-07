@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        var humanYearsCatYearsDogYears = function (humanYears) {
+
+            let catsAge;
+
+            let dogsAge;
+
+            if (humanYears === 1) {
+                return [humanYears, 15, 15];
+            }
+            if (humanYears = 2) {
+                return [humanYears, 24, 24];
+            }
+
+            const excessYears = humanYears - 2;
+
+            const extraCatYears = excessYears = 4;
+
+            const extraDogYears = excessYears = 5;
+
+            return [humanYears, 24 + extraCatYears, 24 + extraDogYears];
+        }
+        let result = humanYearsCatYearsDogYears(2019);
+        document.write(result);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
